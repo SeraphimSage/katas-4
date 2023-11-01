@@ -193,6 +193,9 @@ function kata10() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata10, currentDiv);
 }
+document.write(
+	"<h3>Kata10: Uses splice to add 'Rohan' back to the LOTR Cities Array.</h3>"
+);
 kata10();
 
 //Write a function that uses 'splice' to rename 'Dead Marshes' to 'Deadest Marshes' in 'lotrCitiesArray' and returns the new modified 'lotrCitiesArray'. Remember to also append the results to the page.
@@ -208,6 +211,9 @@ function kata11() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata11, currentDiv);
 }
+document.write(
+	"<h3>Kata11: Uses splice to rename 'Dead Marshes' to 'Deadest Marshes.'</h3>"
+);
 kata11();
 
 //Write a function that uses 'slice' to return a string with the first 14 characters from 'bestThing'. Remember to also append the results to the page.
@@ -223,6 +229,9 @@ function kata12() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata12, currentDiv);
 }
+document.write(
+	"<h3>Kata12: Uses splice to return the first 14 characters from the const bestThing.</h3>"
+);
 kata12();
 
 //Write a function that uses 'slice' to return a string with the last 12 characters from 'bestThing'. Remember to also append the results to the page.
@@ -238,6 +247,9 @@ function kata13() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata13, currentDiv);
 }
+document.write(
+	"<h3>Kata13: Uses splice to return the last 12 characters from the const bestThing.</h3>"
+);
 kata13();
 
 //Write a function that uses 'slice' to return a string with the characters between the 23rd and 38th position of 'bestThing' (i.e., 'boolean is even'). Remember to also append the results to the page.
@@ -253,13 +265,16 @@ function kata14() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata14, currentDiv);
 }
+document.write(
+	"<h3>Kata14: Uses splice to return the characters between the 23rd and 38th positions from the const bestThing.</h3>"
+);
 kata14();
 
 //Write a function that does the exact same thing as #13 but use the 'substring' method instead of 'slice'. Remember to also append the results to the page.
 function kata15() {
 	kata15 = document.createElement("p");
 
-	let endBestThing2 = bestThing.substring(69, 81);
+	let endBestThing2 = bestThing.substring(69);
 
 	let output15 = document.createTextNode(endBestThing2);
 
@@ -268,6 +283,9 @@ function kata15() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata15, currentDiv);
 }
+document.write(
+	"<h3>Kata15: Does the same thing as Kata 13, but uses substring instead of slice.</h3>"
+);
 kata15();
 
 //Write a function that does the exact same thing as #14 but use the 'substring' method instead of 'slice'. Remember to also append the results to the page.
@@ -283,6 +301,9 @@ function kata16() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata16, currentDiv);
 }
+document.write(
+	"<h3>Kata16: Does the same thing as Kata 14, but uses substring instead of slice.</h3>"
+);
 kata16();
 
 //Write a function that uses 'pop' to remove the last city from 'lotrCitiesArray' and returns the new array. Remember to also append the results to the page.
@@ -298,6 +319,9 @@ function kata17() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata17, currentDiv);
 }
+document.write(
+	"<h3>Kata17: Uses pop to remove the last city from the LOTR Cities Array and returns the array.</h3>"
+);
 kata17();
 
 //Write a function that uses 'push' to add back the city from 'lotrCitiesArray' that was removed in #17 to the back of the array and returns the new array. Remember to also append the results to the page.
