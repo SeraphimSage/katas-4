@@ -337,6 +337,9 @@ function kata18() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata18, currentDiv);
 }
+document.write(
+	"<h3>Kata18: Uses push to add the city from the LOTR Cities Array that was removed in Katas17 and returns the new array.</h3>"
+);
 kata18();
 
 //Write a function that uses 'shift' to remove the first city from 'lotrCitiesArray' and returns the new array. Remember to also append the results to the page.
@@ -352,6 +355,9 @@ function kata19() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata19, currentDiv);
 }
+document.write(
+	"<h3>Kata19: Uses shift to remove the first city from the LOTR Cities Array and returns the new array.</h3>"
+);
 kata19();
 
 //Write a function that uses 'unshift' to add back the city from 'lotrCitiesArray' that was removed in #19 to the front of the array and returns the new array. Remember to also append the results to the page.
@@ -367,6 +373,9 @@ function kata20() {
 	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata20, currentDiv);
 }
+document.write(
+	"<h3>Kata20: Uses unshift to add the first city back to the LOTR Cities Array that was removed in katas19 and returns the new array.</h3>"
+);
 kata20();
 
 //Bonus
