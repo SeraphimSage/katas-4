@@ -380,37 +380,63 @@ kata20();
 
 //Bonus
 //Write a function that finds and returns the index of 'only' in 'bestThing'. Remember to also append the results to the page.
-function kata21() {}
+function kata21() {
+	kata21 = document.createElement("p");
+
+	let index = bestThing.indexOf("only");
+
+	let output21 = document.createTextNode(index);
+
+	kata21.appendChild(output21);
+
+	let currentDiv = document.getElementById("h1");
+	document.body.insertBefore(kata21, currentDiv);
+}
+document.write(
+	"<h3>Kata21: Returns the index value of the word 'only' in the 'bestThing' string.</h3>"
+);
+kata21();
 
 //Write a function that finds and returns the index of the last word in 'bestThing'. Remember to also append the results to the page.
 function kata22() {}
+document.write("<h3>Kata22: </h3>");
 
 //Write a function that finds and returns an array of all cities from 'gotCitiesCSV' that use double vowels ('aa', 'ee', etc.). Remember to also append the results to the page.
 function kata23() {}
+document.write("<h3>Kata23: </h3>");
 
 //Write a function that finds and returns an array with all cities from 'lotrCitiesArray' that end with 'or'. Remember to also append the results to the page.
 function kata24() {}
+document.write("<h3>Kata24: </h3>");
 
 //Write a function that finds and returns an array with all the words in 'bestThing' that start with a 'b'. Remember to also append the results to the page.
 function kata25() {}
+document.write("<h3>Kata25: </h3>");
 
 //Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Mirkwood'. Remember to also append the results to the page.
 function kata26() {}
+document.write("<h3>Kata26: </h3>");
 
 //Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Hollywood'. Remember to also append the results to the page.
 function kata27() {}
+document.write("<h3>Kata27: </h3>");
 
 //Write a function that returns the index of 'Mirkwood' in 'lotrCitiesArray'. Remember to also append the results to the page.
 function kata28() {}
+document.write("<h3>Kata28: </h3>");
 
 //Write a function that finds and returns the first city in 'lotrCitiesArray' that has more than one word. Remember to also append the results to the page.
 function kata29() {}
+document.write("<h3>Kata29: </h3>");
 
 //Write a function that reverses the order of 'lotrCitiesArray' and returns the new array. Remember to also append the results to the page.
 function kata30() {}
+document.write("<h3>Kata30: </h3>");
 
 //Write a function that sorts 'lotrCitiesArray' alphabetically and returns the new array. Remember to also append the results to the page.
 function kata31() {}
+document.write("<h3>Kata31: </h3>");
 
 //Write a function that sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array. Remember to also append the results to the page.
 function kata32() {}
+document.write("<h3>Kata32: </h3>");
