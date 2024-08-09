@@ -398,7 +398,15 @@ document.write(
 kata21();
 
 //Write a function that finds and returns the index of the last word in 'bestThing'. Remember to also append the results to the page.
-function kata22() {}
+function kata22() {
+	let answer22 = bestThing.lastIndexOf(" ") + 1;
+	let output22 = document.createTextNode(answer22);
+
+	kata22.appendChild(output22);
+
+	let currentDiv = document.getElementById("h1");
+	document.body.insertBefore(kata22, currentDiv);
+}
 document.write("<h3>Kata22: </h3>");
 
 //Write a function that finds and returns an array of all cities from 'gotCitiesCSV' that use double vowels ('aa', 'ee', etc.). Remember to also append the results to the page.
