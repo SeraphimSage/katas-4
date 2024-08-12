@@ -16,6 +16,12 @@ const bestThing =
 let gotCitiesCSVArray = [gotCitiesCSV];
 let bestThingArray = [bestThing];
 
+console.log("gotCitiesCSV: ", gotCitiesCSV);
+console.log("lotrCitiesArray: ", lotrCitiesArray);
+console.log("bestThing: ", bestThing);
+console.log("gotCitiesCSVArray: ", gotCitiesCSVArray);
+console.log("bestThingArray: ", bestThingArray);
+
 let currentDiv = document.getElementById("h1");
 
 //Write a function that returns an array with the cities in 'gotCitiesCSV'. Remember to also append the results to the page.
