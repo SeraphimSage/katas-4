@@ -16,6 +16,8 @@ const bestThing =
 let gotCitiesCSVArray = [gotCitiesCSV];
 let bestThingArray = [bestThing];
 
+let currentDiv = document.getElementById("h1");
+
 //Write a function that returns an array with the cities in 'gotCitiesCSV'. Remember to also append the results to the page.
 function kata1() {
 	let kata1 = document.createElement("p");
@@ -27,7 +29,7 @@ function kata1() {
 	kata1.appendChild(output1);
 
 	//Add new content and elements to DOM
-	let currentDiv = document.getElementById("h1");
+
 	document.body.insertBefore(kata1, currentDiv);
 }
 document.write(
@@ -43,7 +45,6 @@ function kata2() {
 
 	kata2.appendChild(output2);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata2, currentDiv);
 }
 document.write(
@@ -62,7 +63,6 @@ function kata3() {
 
 		kata3.appendChild(output3);
 
-		let currentDiv = document.getElementById("h1");
 		document.body.insertBefore(kata3, currentDiv);
 	}
 }
@@ -80,7 +80,6 @@ function kata4() {
 
 		kata4.appendChild(output4);
 
-		let currentDiv = document.getElementById("h1");
 		document.body.insertBefore(kata4, currentDiv);
 	}
 }
@@ -98,7 +97,6 @@ function kata5() {
 
 		kata5.appendChild(output5);
 
-		let currentDiv = document.getElementById("h1");
 		document.body.insertBefore(kata5, currentDiv);
 	}
 }
@@ -117,7 +115,6 @@ function kata6() {
 
 		kata6.appendChild(output6);
 
-		let currentDiv = document.getElementById("h1");
 		document.body.insertBefore(kata6, currentDiv);
 	}
 }
@@ -135,7 +132,6 @@ function kata7() {
 
 		kata7.appendChild(output7);
 
-		let currentDiv = document.getElementById("h1");
 		document.body.insertBefore(kata7, currentDiv);
 	}
 }
@@ -154,7 +150,6 @@ function kata8() {
 
 	kata8.appendChild(output8);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata8, currentDiv);
 }
 document.write(
@@ -172,7 +167,6 @@ function kata9() {
 
 	kata9.appendChild(output9);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata9, currentDiv);
 }
 document.write(
@@ -190,7 +184,6 @@ function kata10() {
 
 	kata10.appendChild(output10);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata10, currentDiv);
 }
 document.write(
@@ -208,7 +201,6 @@ function kata11() {
 
 	kata11.appendChild(output11);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata11, currentDiv);
 }
 document.write(
@@ -226,7 +218,6 @@ function kata12() {
 
 	kata12.appendChild(output12);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata12, currentDiv);
 }
 document.write(
@@ -244,7 +235,6 @@ function kata13() {
 
 	kata13.appendChild(output13);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata13, currentDiv);
 }
 document.write(
@@ -262,7 +252,6 @@ function kata14() {
 
 	kata14.appendChild(output14);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata14, currentDiv);
 }
 document.write(
@@ -280,7 +269,6 @@ function kata15() {
 
 	kata15.appendChild(output15);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata15, currentDiv);
 }
 document.write(
@@ -298,7 +286,6 @@ function kata16() {
 
 	kata16.appendChild(output16);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata16, currentDiv);
 }
 document.write(
@@ -316,7 +303,6 @@ function kata17() {
 
 	kata17.appendChild(output17);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata17, currentDiv);
 }
 document.write(
@@ -334,7 +320,6 @@ function kata18() {
 
 	kata18.appendChild(output18);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata18, currentDiv);
 }
 document.write(
@@ -352,7 +337,6 @@ function kata19() {
 
 	kata19.appendChild(output19);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata19, currentDiv);
 }
 document.write(
@@ -370,7 +354,6 @@ function kata20() {
 
 	kata20.appendChild(output20);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata20, currentDiv);
 }
 document.write(
@@ -389,7 +372,6 @@ function kata21() {
 
 	kata21.appendChild(output21);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata21, currentDiv);
 }
 document.write(
@@ -399,19 +381,44 @@ kata21();
 
 //Write a function that finds and returns the index of the last word in 'bestThing'. Remember to also append the results to the page.
 function kata22() {
+	kata22 = document.createElement("p");
+
 	let answer22 = bestThing.lastIndexOf(" ") + 1;
 	let output22 = document.createTextNode(answer22);
 
 	kata22.appendChild(output22);
 
-	let currentDiv = document.getElementById("h1");
 	document.body.insertBefore(kata22, currentDiv);
 }
-document.write("<h3>Kata22: </h3>");
+document.write(
+	"<h3>Kata22: Returns the index of the last word in the 'bestThing string.</h3>"
+);
+kata22();
 
 //Write a function that finds and returns an array of all cities from 'gotCitiesCSV' that use double vowels ('aa', 'ee', etc.). Remember to also append the results to the page.
-function kata23() {}
-document.write("<h3>Kata23: </h3>");
+function kata23() {
+	kata23 = document.createElement("p");
+
+	const doubleVowels = ["aa", "ee", "ii", "oo", "uu"];
+
+	let gotCitiesCSVArray = gotCitiesCSV.split(",");
+
+	let answer23 = gotCitiesCSVArray.filter((cityName) => {
+		return doubleVowels.some((vowelCombo) =>
+			cityName.toLowerCase().includes(vowelCombo)
+		);
+	});
+
+	let output23 = document.createTextNode(answer23);
+
+	kata23.appendChild(output23);
+
+	document.body.insertBefore(kata23, currentDiv);
+}
+document.write(
+	"<h3>Kata23: Filters the gotCitiesCSV for any that have double vowels in their name.</h3>"
+);
+kata23();
 
 //Write a function that finds and returns an array with all cities from 'lotrCitiesArray' that end with 'or'. Remember to also append the results to the page.
 function kata24() {}
