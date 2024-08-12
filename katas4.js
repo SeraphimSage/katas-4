@@ -427,12 +427,55 @@ document.write(
 kata23();
 
 //Write a function that finds and returns an array with all cities from 'lotrCitiesArray' that end with 'or'. Remember to also append the results to the page.
-function kata24() {}
-document.write("<h3>Kata24: </h3>");
+function kata24() {
+	kata24 = document.createElement("p");
+
+	const searchValue = "or";
+
+	let answer24 = [];
+	for (let i = 0; i < lotrCitiesArray.length; i++) {
+		if (lotrCitiesArray[i].slice(-2) == searchValue) {
+			answer24.push(" " + lotrCitiesArray[i]);
+		}
+	}
+
+	let output24 = document.createTextNode(answer24);
+
+	kata24.appendChild(output24);
+
+	document.body.insertBefore(kata24, currentDiv);
+}
+document.write(
+	"<h3>Kata24: Returns an array with all cities from 'lotrCitiesArray' that end with 'or'.</h3>"
+);
+kata24();
 
 //Write a function that finds and returns an array with all the words in 'bestThing' that start with a 'b'. Remember to also append the results to the page.
-function kata25() {}
-document.write("<h3>Kata25: </h3>");
+function kata25() {
+	kata25 = document.createElement("p");
+
+	const searchValue = "b";
+
+	let bestSplit = bestThing.split(" ");
+	console.log(bestSplit);
+	let answer25 = [];
+	for (let i = 0; i < bestSplit.length; i++) {
+		if (bestSplit[i].slice(0, 1) == searchValue) {
+			answer25.push(" " + bestSplit[i]);
+		}
+	}
+	console.log(answer25);
+
+	let output25 = document.createTextNode(answer25);
+
+	kata25.appendChild(output25);
+
+	document.body.insertBefore(kata25, currentDiv);
+}
+document.write(
+	"<h3>Kata25: Returns an array with all the words in 'bestThing' that start with a 'b'.</h3>"
+);
+kata25();
 
 //Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Mirkwood'. Remember to also append the results to the page.
 function kata26() {}
