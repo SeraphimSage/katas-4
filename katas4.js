@@ -457,14 +457,13 @@ function kata25() {
 	const searchValue = "b";
 
 	let bestSplit = bestThing.split(" ");
-	console.log(bestSplit);
+
 	let answer25 = [];
 	for (let i = 0; i < bestSplit.length; i++) {
 		if (bestSplit[i].slice(0, 1) == searchValue) {
 			answer25.push(" " + bestSplit[i]);
 		}
 	}
-	console.log(answer25);
 
 	let output25 = document.createTextNode(answer25);
 
@@ -478,29 +477,122 @@ document.write(
 kata25();
 
 //Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Mirkwood'. Remember to also append the results to the page.
-function kata26() {}
-document.write("<h3>Kata26: </h3>");
+function kata26() {
+	kata26 = document.createElement("p");
+
+	const searchValue = "Mirkwood";
+
+	let answer26 = "";
+	for (let i = 0; i < lotrCitiesArray.length; i++) {
+		if (lotrCitiesArray[i] == searchValue) {
+			answer26 = "Yes";
+		} else {
+			answer26 = "No";
+		}
+	}
+
+	let output26 = document.createTextNode(answer26);
+
+	kata26.appendChild(output26);
+
+	document.body.insertBefore(kata26, currentDiv);
+}
+document.write(
+	"<h3>Kata26: Returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Mirkwood'.</h3>"
+);
+kata26();
 
 //Write a function that returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Hollywood'. Remember to also append the results to the page.
-function kata27() {}
-document.write("<h3>Kata27: </h3>");
+function kata27() {
+	kata27 = document.createElement("p");
+
+	const searchValue = "HollyWood";
+
+	let answer27 = "";
+	for (let i = 0; i < lotrCitiesArray.length; i++) {
+		if (lotrCitiesArray[i] == searchValue) {
+			answer27 = "Yes";
+		} else {
+			answer27 = "No";
+		}
+	}
+
+	let output27 = document.createTextNode(answer27);
+
+	kata27.appendChild(output27);
+
+	document.body.insertBefore(kata27, currentDiv);
+}
+document.write(
+	"<h3>Kata27: Returns 'Yes' or 'No' if 'lotrCitiesArray' includes 'Hollywood'.</h3>"
+);
+kata27();
 
 //Write a function that returns the index of 'Mirkwood' in 'lotrCitiesArray'. Remember to also append the results to the page.
-function kata28() {}
-document.write("<h3>Kata28: </h3>");
+function kata28() {
+	kata28 = document.createElement("p");
+
+	const searchValue = "Mirkwood";
+
+	let answer28 = "";
+	for (let i = 0; i < lotrCitiesArray.length; i++) {
+		if (lotrCitiesArray[i] == searchValue) {
+			answer28 = i;
+		}
+	}
+
+	let output28 = document.createTextNode(answer28);
+
+	kata28.appendChild(output28);
+
+	document.body.insertBefore(kata28, currentDiv);
+}
+document.write(
+	"<h3>Kata28: Returns the index of 'Mirkwood' in 'lotrCitiesArray'.</h3>"
+);
+kata28();
 
 //Write a function that finds and returns the first city in 'lotrCitiesArray' that has more than one word. Remember to also append the results to the page.
-function kata29() {}
-document.write("<h3>Kata29: </h3>");
+function kata29() {
+	kata29 = document.createElement("p");
+
+	const searchValue = " ";
+
+	let answer29 = "";
+	for (let i = 0; i < lotrCitiesArray.length; i++) {
+		if (lotrCitiesArray[i].includes(" ")) {
+			answer29 = i;
+		}
+	}
+
+	let output29 = document.createTextNode(answer29);
+
+	kata29.appendChild(output29);
+
+	document.body.insertBefore(kata29, currentDiv);
+}
+document.write(
+	"<h3>Kata29: Returns the first city in 'lotrCitiesArray' that has more than one word.</h3>"
+);
+kata29();
 
 //Write a function that reverses the order of 'lotrCitiesArray' and returns the new array. Remember to also append the results to the page.
 function kata30() {}
-document.write("<h3>Kata30: </h3>");
+document.write(
+	"<h3>Kata30: Reverses the order of 'lotrCitiesArray' and returns the new array.</h3>"
+);
+kata30();
 
 //Write a function that sorts 'lotrCitiesArray' alphabetically and returns the new array. Remember to also append the results to the page.
 function kata31() {}
-document.write("<h3>Kata31: </h3>");
+document.write(
+	"<h3>Kata31: Sorts 'lotrCitiesArray' alphabetically and returns the new array.</h3>"
+);
+kata31();
 
 //Write a function that sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array. Remember to also append the results to the page.
 function kata32() {}
-document.write("<h3>Kata32: </h3>");
+document.write(
+	"<h3>Kata32: Sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array.</h3>"
+);
+kata32();
