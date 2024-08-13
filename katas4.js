@@ -577,21 +577,54 @@ document.write(
 kata29();
 
 //Write a function that reverses the order of 'lotrCitiesArray' and returns the new array. Remember to also append the results to the page.
-function kata30() {}
+function kata30() {
+	kata30 = document.createElement("p");
+
+	let answer30 = [];
+	for (let i = lotrCitiesArray.length - 1; i >= 0; i--) {
+		answer30.push(" " + lotrCitiesArray[i]);
+	}
+
+	let output30 = document.createTextNode(answer30);
+
+	kata30.appendChild(output30);
+
+	document.body.insertBefore(kata30, currentDiv);
+}
 document.write(
 	"<h3>Kata30: Reverses the order of 'lotrCitiesArray' and returns the new array.</h3>"
 );
 kata30();
 
 //Write a function that sorts 'lotrCitiesArray' alphabetically and returns the new array. Remember to also append the results to the page.
-function kata31() {}
+function kata31() {
+	kata31 = document.createElement("p");
+
+	let answer31 = lotrCitiesArray.sort();
+
+	let output31 = document.createTextNode(answer31);
+
+	kata31.appendChild(output31);
+
+	document.body.insertBefore(kata31, currentDiv);
+}
 document.write(
 	"<h3>Kata31: Sorts 'lotrCitiesArray' alphabetically and returns the new array.</h3>"
 );
 kata31();
 
 //Write a function that sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array. Remember to also append the results to the page.
-function kata32() {}
+function kata32() {
+	kata32 = document.createElement("p");
+
+	let answer32 = lotrCitiesArray.sort((a, b) => a.length - b.length);
+
+	let output32 = document.createTextNode(answer32);
+
+	kata32.appendChild(output32);
+
+	document.body.insertBefore(kata32, currentDiv);
+}
 document.write(
 	"<h3>Kata32: Sorts 'lotrCitiesArray' by the number of characters in each city (i.e., shortest city names go first) and return the new array.</h3>"
 );
